@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         elevation: 3
     },
     nameText: {
-        color: colors.primary
+        color: colors.primary,
+        fontFamily: 'MontserratMedium'
     }
 })

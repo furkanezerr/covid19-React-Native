@@ -18,7 +18,7 @@ const Continents = ({ navigation }) => {
     return (
         <View style={{ flex: 1 }}>
             <Header
-                title="Select a continent"
+                title="Continents"
             />
             <FlatList
                 data={ContinentData}

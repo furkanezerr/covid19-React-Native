@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         textAlignVertical: 'center',
         fontSize: 18,
-        color: colors.primary
+        color: colors.primary,
+        fontFamily: 'MontserratBold'
     }
 })

@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
     },
     country: {
         fontSize: 25,
+        fontFamily: 'MontserratMedium',
         textAlign: 'center',
         marginVertical: 10,
         color: colors.primary,
@@ -131,22 +132,27 @@ const styles = StyleSheet.create({
     date: {
         color: 'grey',
         textAlign: 'center',
-        fontSize: 12
+        fontSize: 12,
+        fontFamily: 'MontserratRegular'
     },
     row: {
         padding: 10,
-        // flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
     },
     iconAndLabelContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        borderBottomColor: colors.primary,
+        borderBottomWidth: 1
     },
     label: {
-        fontWeight: 'bold'
+        fontFamily: 'MontserratBold',
+        marginBottom: 5,
     },
     dataText: {
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: 13,
+        fontFamily: 'MontserratRegular'
     },
     btnContainer: {
         position: 'absolute',

@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 10,
         paddingHorizontal: 10,
         paddingVertical: 5,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        fontFamily: 'MontserratRegular'
     }
 })

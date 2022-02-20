@@ -23,13 +23,14 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: colors.primary,
         width: '50%',
-        borderRadius: 10,
+        borderRadius: 15,
         elevation: 3
     },
     title: {
         textAlign: 'center',
-        paddingVertical: 10,
-        fontSize: 14,
+        fontFamily: 'MontserratMedium',
+        paddingVertical: 15,
+        fontSize: 15,
         color: 'white'
     }
 })
