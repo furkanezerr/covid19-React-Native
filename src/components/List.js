@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     },
     nameText: {
         color: colors.primary,
-        fontFamily: 'MontserratMedium'
+        fontFamily: 'montserratMedium'
     }
 })

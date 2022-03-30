@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     },
     country: {
         fontSize: 25,
-        fontFamily: 'MontserratMedium',
+        fontFamily: 'montserratMedium',
         textAlign: 'center',
         marginVertical: 10,
         color: colors.primary,

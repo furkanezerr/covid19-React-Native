@@ -1,8 +1,11 @@
+import 'intl';
+import 'intl/locale-data/jsonp/en';
+import { useState, useEffect } from 'react';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
 import ReduxThunk from 'redux-thunk'
 import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
+import * as Font from 'expo-font';
 
 import StackNavigator from './src/navigation/StackNavigator'
 
@@ -15,22 +18,35 @@ const rootReducer = combineReducers({
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk))
 
 const App = () => {
-  const [loaded] = useFonts({
-    MontserratBold: require('./assets/fonts/Montserrat-Bold.ttf'),
-    MontserratMedium: require('./assets/fonts/Montserrat-Medium.ttf'),
-    MontserratRegular: require('./assets/fonts/Montserrat-Regular.ttf'),
-  });
+  const [fontloaded, setIsFontLoaded] = useState(false);
 
-  if (!loaded) {
-    <AppLoading
-    />
-  }
+  useEffect(() => {
+    const loadFonts = async () => {
+      await Font.loadAsync({
+        MontserratBold: require('./assets/fonts/Montserrat-Bold.ttf'),
+        montserratMedium: require('./assets/fonts/Montserrat-Medium.ttf'),
+        MontserratRegular: require('./assets/fonts/Montserrat-Regular.ttf'),
+      })
+
+      setIsFontLoaded(true)
+    }
+
+    loadFonts()
+  }, [])
 
   return (
-    <Provider store={store}>
-      <StackNavigator />
-    </Provider>
-
+    <>
+      {
+        fontloaded ? (
+          <Provider store={store}>
+            <StackNavigator />
+          </Provider>
+        ) : (
+          <AppLoading
+          />
+        )
+      }
+    </>
   );
 }
 

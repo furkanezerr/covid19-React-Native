@@ -7,6 +7,8 @@ const initialState = {
     filteredBySearch: [],
 }
 
+const numberFormat = new Intl.NumberFormat();
+
 const covidReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_ALL_DATA:
@@ -20,15 +22,15 @@ const covidReducer = (state = initialState, action) => {
                         key,
                         resData[key].country,
                         resData[key].continent,
-                        resData[key].population,
+                        numberFormat.format(resData[key].population),
                         resData[key].day,
-                        resData[key].cases?.active,
-                        resData[key].cases?.critical,
-                        resData[key].cases?.new,
-                        resData[key].cases?.recovered,
-                        resData[key].cases?.total,
-                        resData[key].deaths?.new,
-                        resData[key].deaths?.total,
+                        numberFormat.format(resData[key].cases?.active),
+                        numberFormat.format(resData[key].cases?.critical),
+                        numberFormat.format(resData[key].cases?.new),
+                        numberFormat.format(resData[key].cases?.recovered),
+                        numberFormat.format(resData[key].cases?.total),
+                        numberFormat.format(resData[key].deaths?.new),
+                        numberFormat.format(resData[key].deaths?.total),
                     )
                 )
             }

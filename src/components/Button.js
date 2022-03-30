@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     },
     title: {
         textAlign: 'center',
-        fontFamily: 'MontserratMedium',
+        fontFamily: 'montserratMedium',
         paddingVertical: 15,
         fontSize: 15,
         color: 'white'
