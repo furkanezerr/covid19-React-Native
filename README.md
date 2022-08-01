@@ -1,5 +1,9 @@
 # Covid-19 Status Mobile App
 
+## Screenshots
+
+![app-review](https://user-images.githubusercontent.com/93818025/182182128-c718e649-f254-4af0-8c56-dc45124d7e8b.jpg)
+
 ## Setting up the development environment
 
 ---
@@ -41,6 +45,4 @@ You need to visit [RapidAPI - Free Covid-19 Api](https://rapidapi.com/api-sports
 - React-redux [docs](https://react-redux.js.org/introduction/getting-started)
 - Redux-thunk [git-hub](https://github.com/reduxjs/redux-thunk)
 
-## Screenshots
 
-![app-review](https://user-images.githubusercontent.com/93818025/182182128-c718e649-f254-4af0-8c56-dc45124d7e8b.jpg)
