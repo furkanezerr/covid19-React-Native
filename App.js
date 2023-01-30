@@ -33,7 +33,7 @@ const App = () => {
 
     loadFonts()
   }, [])
-
+console.log('furkan');
   return (
     <>
       {
